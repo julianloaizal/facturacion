@@ -36,6 +36,25 @@
 					@auth()
                     <ul class="navbar-nav mr-auto">
 						<!--Nav Bar Hooks - Do not delete!!-->
+						<li class="nav-item">
+                            <a href="{{ url('/pagos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Pagos</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/servicios') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Servicios</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/productos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Productos</a> 
+                        </li>						
+						<li class="nav-item">
+                            <a href="{{ url('/facturas') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Facturas</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/envios') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Envios</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/pedidos') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Pedidos</a> 
+                        </li>
+                        
                     </ul>
 					@endauth()
 					

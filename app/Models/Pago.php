@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ModoPago extends Model
+class Pago extends Model
 {
 	use HasFactory;
 	
     public $timestamps = true;
 
-    protected $table = 'modoPagos';
+    protected $table = 'pagos';
 
     protected $fillable = ['id_pago','descripcion','otros_detalles','factura_id_factura','factura_cliente_id_vendedor','factura_pedido_id_pedido','factura_pedido_cliente_id_vendedor'];
 	
@@ -23,6 +23,7 @@ class ModoPago extends Model
         return $this->hasOne('App\Models\Factura', 'id_factura', 'factura_id_factura');
     }
     
-   
+  
+    
     
 }
